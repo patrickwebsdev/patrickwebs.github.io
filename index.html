@@ -5,14 +5,15 @@
     <meta name="keywords" content="desarrolo, desarrollador, desarrollador web, web, website, freelance, freelancer, html, html5, css, css3, bootstrap, animate.css, wow.js, slick.js, javascript, jquery, php, PatrickWebs">
     <meta property="og:title" content="PatrickWebs | Inicio">
     <meta name="description" content="Desarrollador web freelancer">
+	<meta property="og:type" content="website" />
     <meta property="og:image" content="https://patrickwebsdev.github.io/portafolio/img/social_media_logo.png">
-    <meta property="og:url" content="https://patrickwebsdev.github.io/portafolio/">
+    <meta property="og:url" itemprop="image" content="https://patrickwebsdev.github.io/portafolio/">
+    <meta name="og:description" content="Desarrollador web freelancer">
     <meta name="author" content="PatrickWebs">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/flickity.css"/>
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.ico" />
@@ -21,6 +22,11 @@
 <body>
 	<header id="home">
 		<div id="carrusel" class="carousel slide carousel-fade carrusel header" data-ride="carousel">
+			<div class="arrow bounce">
+				<a class="scroll" href="#skills">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 120.64" style="enable-background:new 0 0 122.88 120.64" xml:space="preserve"><g><path d="M108.91,54.03c1.63-1.55,3.74-2.31,5.85-2.28c2.11,0.03,4.2,0.84,5.79,2.44l0.12,0.12c1.5,1.58,2.23,3.6,2.2,5.61 c-0.03,2.01-0.82,4.02-2.37,5.55c-17.66,17.66-35.61,35.13-53.4,52.68c-0.05,0.07-0.1,0.13-0.16,0.19 c-1.63,1.55-3.76,2.31-5.87,2.28c-2.11-0.03-4.21-0.85-5.8-2.45l-0.26-0.27C37.47,100.43,19.87,82.98,2.36,65.46 C0.82,63.93,0.03,61.93,0,59.92c-0.03-2.01,0.7-4.03,2.21-5.61l0.15-0.15c1.58-1.57,3.66-2.38,5.76-2.41 c2.1-0.03,4.22,0.73,5.85,2.28l47.27,47.22L108.91,54.03L108.91,54.03z M106.91,2.26c1.62-1.54,3.73-2.29,5.83-2.26 c2.11,0.03,4.2,0.84,5.79,2.44l0.12,0.12c1.5,1.57,2.23,3.6,2.21,5.61c-0.03,2.01-0.82,4.02-2.37,5.55 C101.2,31.01,84.2,48.87,67.12,66.39c-0.05,0.07-0.11,0.14-0.17,0.21c-1.63,1.55-3.76,2.31-5.87,2.28 c-2.11-0.03-4.21-0.85-5.8-2.45C38.33,48.94,21.44,31.36,4.51,13.83l-0.13-0.12c-1.54-1.53-2.32-3.53-2.35-5.54 C2,6.16,2.73,4.14,4.23,2.56l0.15-0.15C5.96,0.84,8.05,0.03,10.14,0c2.1-0.03,4.22,0.73,5.85,2.28l45.24,47.18L106.91,2.26 L106.91,2.26z"/></g></svg>
+				</a>
+			</div>
 			<svg class="wave-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 				<path fill-opacity="1" d="M0,160L60,144C120,128,240,96,360,112C480,128,600,192,720,208C840,224,960,192,1080,192C1200,192,1320,224,1380,240L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
 			</svg>
@@ -146,7 +152,7 @@
 			<div class="row skills p-md-5 my-5 d-flex justify-content-center">
 				<div class="col-12 mt-mb-0 mt-3 about-progress PatrickWebs fadeInUp">
 					<h1 class="sub-title">MIS HABILIDADES/SKILLS</h1>
-					<div class="items">
+					<div class="items js-flickity" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": true, "initialIndex": 0, "cellAlign": "left"  }'>
 						<div>
 							<img src="img/skills/html5.webp">
 							<h5>HTML5</h5>
@@ -383,7 +389,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-	<script src="js/slick.min.js"></script>
+	<script src="js/flickity.js"></script>
     <script src="js/script.min.js"></script>
 	<script src="js/wow.min.js"></script>
 </body>
