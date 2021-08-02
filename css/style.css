@@ -112,7 +112,9 @@ nav .navbar-nav a {
 	font-weight: bold;
 	text-transform: uppercase;
 }
-
+nav .logo {
+  width: 100%;
+}
 /* NAVEGACION */
 
 /* CARRUSEL - INICIO */
